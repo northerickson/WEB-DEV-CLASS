@@ -1,0 +1,154 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #fcfbfb;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: rgba(20,30,13, .7);
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+    width: 80px;
+}
+
+nav a {
+    color: #fcfbfb;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #000;
+    color: #d9c2a3;
+}
+
+#hero-msg h1,
+.home-title {
+    text-align: center;
+    color: #2c3e50;
+}
+
+#hero-msg h4,
+h4 {
+    text-align: center;
+    color: #1abc9c;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.book,
+.join {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.book:hover,
+.join:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+main section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#background {
+    height: 725px;
+    background-color: #e0ecef;
+    width: 100%;
+}
+
+.msg {
+    background-color: #f9f9f9;
+    color: #222;
+    padding: 32px;
+    border-radius: 8px;
+    margin: 32px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.msg h2 {
+    color: #2c3e50;
+}
+
+.msg p {
+    color: #222;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d9c2a3;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social img {
+    width: 32px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
