@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="160" viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Co-Op Gaming Logo">
+  <defs>
+    <linearGradient id="gradA" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left: bold controller mark -->
+  <g transform="translate(10,20)" filter="url(#glow)">
+    <rect x="0" y="0" rx="20" ry="20" width="220" height="120" fill="url(#gradA)"/>
+    <!-- D-pad -->
+    <rect x="36" y="46" width="24" height="8" rx="3" fill="#07123a"/>
+    <rect x="46" y="36" width="8" height="24" rx="3" fill="#07123a"/>
+    <circle cx="150" cy="60" r="14" fill="#07123a"/>
+    <circle cx="150" cy="60" r="6" fill="#9ca3af"/>
+    <!-- two grip highlights -->
+    <ellipse cx="48" cy="92" rx="16" ry="8" fill="#ffffff" opacity="0.06"/>
+    <ellipse cx="172" cy="92" rx="16" ry="8" fill="#ffffff" opacity="0.06"/>
+  </g>
+
+  <!-- Right: bold stacked text -->
+  <g transform="translate(240,36)">
+    <text x="0" y="36" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="48" fill="#0f172a" font-weight="800">CO-OP</text>
+    <text x="0" y="78" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="20" fill="#374151" letter-spacing="1">GAMING HUB</text>
+    <!-- small tagline -->
+    <text x="0" y="106" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#6b7280">Find friends. Play together.</text>
+  </g>
+</svg>
