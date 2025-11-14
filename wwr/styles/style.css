@@ -356,5 +356,211 @@ footer p, footer .social { margin: 0; }
         display: block;
         margin: 0 auto;
     }
-    footer { margin-top: 25px; }
+footer { margin-top: 25px; }
 }
+
+/* ---------- PACKAGES PAGE STYLES ---------- */
+
+.packages-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.packages-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e0ecef 0%, #d4e5eb 100%);
+    border-radius: 8px;
+}
+
+.packages-header h1 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+}
+
+.packages-header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.packages-hero {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Packages grid layout */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.package-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.package-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.package-card h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    color: #2c3e50;
+    margin: 20px 15px 10px 15px;
+    font-size: 1.5em;
+}
+
+.package-duration {
+    color: #1abc9c;
+    font-weight: 600;
+    margin: 5px 15px;
+    font-size: 0.9em;
+}
+
+.package-price {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 10px 15px 15px 15px;
+}
+
+.package-description {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding: 0 15px;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.package-card .book {
+    margin: 15px;
+    margin-top: auto;
+}
+
+/* Info section */
+.packages-info {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.packages-info h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 25px;
+    border-left: 4px solid #1abc9c;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* CTA section */
+.packages-cta {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.packages-cta h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.packages-cta p {
+    font-size: 1.1em;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    color: #ecf0f1;
+}
+
+.packages-cta .book {
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 12px 32px;
+}
+
+.packages-cta .book:hover {
+    background-color: #16a085;
+}
+
+/* Responsive adjustments for packages page */
+@media screen and (max-width: 768px) {
+    .packages-header h1 {
+        font-size: 1.8em;
+    }
+    
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .packages-cta h2 {
+        font-size: 1.5em;
+    }
+}
+
