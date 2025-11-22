@@ -187,3 +187,51 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+/* Image utilities: make images consistent and responsive across pages */
+/* Default: keep images from overflowing their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Page hero / banner images (large banners) */
+.page-hero {
+  display: block;
+  margin: 0.5em auto 1.2em;
+  width: 100%;
+  max-width: 1000px; /* limits very large images */
+  height: 360px; /* consistent banner height */
+  object-fit: cover; /* crop to fit without distortion */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Card / grid thumbnails */
+.card-img, .package-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* Smaller example/result images */
+.result-img {
+  max-width: 360px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0.5em auto;
+}
+
+/* Wireframe images in the site-plan should be constrained but readable */
+.site-plan img, .logo-preview, .site-logo {
+  max-width: 480px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .page-hero { height: 240px; }
+  .card-img, .package-img { height: 160px; }
+}
