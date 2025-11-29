@@ -3,61 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Co-Op Gaming Hub</title>
+  <title>Co-Op Gaming Hub — Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/site-plan.css">
+  <link rel="stylesheet" href="styles/home.css">
 </head>
-<body>
+<body class="home-page">
   <header>
     <div class="header-inner">
       <img src="images/logo.svg" alt="Co-Op Gaming Logo" class="site-logo">
       <div class="header-text">
         <h1>Co-Op Gaming Hub</h1>
-        <h2>North Erickson — WDD 130-03</h2>
+        <h2>Play Together, Win Together</h2>
       </div>
     </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="top-games.html">Top Games</a>
-    <a href="find-your-match.html">Find Your Match</a>
-    <a href="site-plan.html">Site Plan</a>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="top-games.html">Top Games</a></li>
+      <li><a href="find-your-match.html">Find Your Match</a></li>
+      <li><a href="site-plan.html">Site Plan</a></li>
+    </ul>
   </nav>
 
-  <main>
-    <section id="hero">
-      <h2>Welcome</h2>
-      <p>Co-Op Gaming Hub helps friends find, pick, and play cooperative games together. Whether you're looking for quick casual sessions or deep cooperative adventures, we've got recommendations, guides, and tools to help you play together.</p>
-  <!-- page-specific hero image (use the home photo) -->
-  <img src="images/rsz_6home.jpg" alt="Home hero photo" class="page-hero">
+  <main class="home-main">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to Co-Op Gaming Hub</h2>
+        <p>Discover the best cooperative games to play with friends. Whether you're looking for quick casual sessions or deep cooperative adventures, we've got recommendations, guides, and tools to help you play together.</p>
+        <a href="top-games.html" class="btn btn-primary">Browse Games</a>
+      </div>
+      <img src="images/rsz_6home.jpg" alt="Friends gaming together" class="hero-image">
     </section>
 
-    <section id="features">
-      <h2>What you'll find here</h2>
-      <ul>
-        <li>Curated lists of co-op games by genre and price</li>
-        <li>Quick filters to find a game tonight</li>
-        <li>Tips for setting up voice chat and hosting sessions</li>
-      </ul>
+    <!-- Features Section -->
+    <section class="features-section">
+      <h2>What You'll Find Here</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Curated Game Lists</h3>
+          <p>Handpicked co-op games organized by genre, price, and player count. Find exactly what you're looking for.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Quick Finder</h3>
+          <p>Use our smart filters to find a game tonight. Just tell us your platform, budget, and preferred style.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🎧</div>
+          <h3>Setup Guides</h3>
+          <p>Learn tips for setting up voice chat, hosting sessions, and coordinating with friends online.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="featured">
+    <!-- Featured Games Section -->
+    <section class="featured-section">
       <h2>Featured Picks</h2>
-      <article>
-        <h3>It Takes Two — Cooperative Adventure</h3>
-        <p>A story-driven cooperative game built for two players. Great for friends who want an engaging narrative and fun puzzles.</p>
-      </article>
-      <article>
-        <h3>Stardew Valley (Co-Op)</h3>
-        <p>Relaxed multiplayer farming and crafting — great for casual sessions and long-term play with friends.</p>
-      </article>
+      <div class="featured-grid">
+        <article class="game-card">
+          <img src="images/[20+] It Takes Two Wallpapers.jpg" alt="It Takes Two game" class="game-card-image">
+          <div class="game-header" style="background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);">
+            <h3>It Takes Two</h3>
+            <p class="game-tag">Cooperative Adventure</p>
+          </div>
+          <div class="game-body">
+            <p>A story-driven cooperative game built for two players. Great for friends who want an engaging narrative and fun puzzles.</p>
+            <div class="game-meta">
+              <span class="meta-item">👥 2 Players</span>
+              <span class="meta-item">💰 $29.99</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img src="images/StardewValley_4-768x432.png" alt="Stardew Valley game" class="game-card-image">
+          <div class="game-header" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);">
+            <h3>Stardew Valley</h3>
+            <p class="game-tag">Casual & Relaxing</p>
+          </div>
+          <div class="game-body">
+            <p>Relaxed multiplayer farming and crafting — great for casual sessions and long-term play with friends.</p>
+            <div class="game-meta">
+              <span class="meta-item">👥 2-4 Players</span>
+              <span class="meta-item">💰 $14.99</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section">
+      <h2>Ready to Play?</h2>
+      <p>Start exploring games that bring friends together</p>
+      <div class="cta-buttons">
+        <a href="top-games.html" class="btn btn-primary">Browse Top Games</a>
+        <a href="find-your-match.html" class="btn btn-secondary">Find Your Match</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Co-Op Gaming Hub — North Erickson</p>
-    <p><a href="site-plan.html">View site plan</a></p>
+    <div class="footer-content">
+      <p>&copy; 2025 Co-Op Gaming Hub — North Erickson</p>
+      <p><a href="site-plan.html">View Site Plan</a> | <a href="#">About</a></p>
+    </div>
   </footer>
 </body>
 </html>
