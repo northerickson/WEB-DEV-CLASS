@@ -207,6 +207,18 @@ img {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+/* Use this when you want the full image visible (less cropping) */
+.page-hero--full {
+  /* override fixed height so the image displays fully */
+  height: auto !important;
+  max-height: none;
+  width: 100%;
+  max-width: 1000px;
+  object-fit: contain; /* ensure entire image fits */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
 /* Card / grid thumbnails */
 .card-img, .package-img {
   width: 100%;
