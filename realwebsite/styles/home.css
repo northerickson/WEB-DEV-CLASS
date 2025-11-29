@@ -54,21 +54,24 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
-  padding: 4rem;
-  max-width: 100%;
+  padding: 4rem 2rem;
+  max-width: 1280px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ===== HERO SECTION - 2 COLUMN LAYOUT ===== */
 .hero-section {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 6rem;
+  gap: 4rem;
   align-items: center;
-  padding: 5rem 6rem;
+  padding: 4rem 3rem;
   background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%);
-  border-radius: 0;
-  margin: 0;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -205,8 +208,12 @@
 
 /* ===== FEATURES SECTION - 3 COLUMN GRID ===== */
 .features-section {
-  padding: 5rem 6rem;
+  padding: 3rem 2rem;
   background-color: #f9fafb;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .features-section h2 {
@@ -311,13 +318,12 @@
 .cta-section {
   background: linear-gradient(135deg, var(--secondary-color) 0%, #1a2942 100%);
   color: white;
-  padding: 5rem 6rem;
-  border-radius: 0;
+  padding: 4rem 3rem;
+  border-radius: 12px;
   text-align: center;
   margin-top: 0;
-  margin-left: -4rem;
-  margin-right: -4rem;
-  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .cta-section h2 {
@@ -348,7 +354,7 @@
 footer {
   background-color: var(--secondary-color);
   color: var(--headline-color-on-color);
-  padding: 3rem 6rem;
+  padding: 3rem 2rem;
   text-align: center;
   margin-top: 0;
 }
