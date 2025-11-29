@@ -34,9 +34,9 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   text-align: center;
 }
