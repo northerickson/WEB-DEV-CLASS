@@ -247,3 +247,23 @@ img {
   .page-hero { height: 240px; }
   .card-img, .package-img { height: 160px; }
 }
+
+/* Nav enhancement styles (applies only when script upgrades the nav) */
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; display:flex; align-items:center; justify-content:space-between; }
+.nav-toggle { display: none; background:none; border:none; font-size:1.1rem; padding:10px; color:var(--secondary-color); cursor:pointer; }
+.nav-list { list-style:none; margin:0; padding:0; display:flex; gap:0; align-items:center; }
+.nav-list li { position:relative; }
+.nav-list a { display:block; padding:12px 14px; text-decoration:none; color:var(--nav-link-color); font-weight:700; }
+.nav-list a:hover, .nav-list a.active { color:var(--nav-hover-link-color); background-color:var(--nav-hover-background-color); }
+.dropdown { display:none; position:absolute; top:100%; left:0; background:white; min-width:180px; box-shadow:0 8px 20px rgba(0,0,0,0.12); border-radius:6px; overflow:hidden; z-index:200; }
+.has-dropdown:hover .dropdown { display:block; }
+.has-dropdown.open .dropdown { display:flex; flex-direction:column; }
+
+@media (max-width:800px) {
+  .nav-toggle { display:block; }
+  .nav-list { display:none; flex-direction:column; width:100%; }
+  .nav-list.open { display:flex; }
+  .nav-list li { width:100%; }
+  .nav-list a { padding:12px 16px; }
+  .has-dropdown .dropdown { position:static; box-shadow:none; }
+}
