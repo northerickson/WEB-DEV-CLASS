@@ -267,3 +267,61 @@ img {
   .nav-list a { padding:12px 16px; }
   .has-dropdown .dropdown { position:static; box-shadow:none; }
 }
+
+/* ===== Child Page: Top Games Grid & Spacing ===== */
+main {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.page-banner { margin-bottom: 1.25rem; }
+.page-banner .page-hero { width: 100%; max-width: 1200px; height: 380px; }
+
+/* Intro block under the banner */
+main > h2 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  margin: 0.6rem 0 0.4rem 0;
+}
+main > p {
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  color: var(--paragraph-color-on-white);
+}
+
+/* Game list grid: 3 columns desktop, 2 tablet, 1 mobile */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin: 1.5rem auto 3rem auto;
+  max-width: 1200px;
+}
+
+.game {
+  background: var(--accent2-color);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.game h3 { margin: 0; font-family: var(--heading-font); color: var(--secondary-color); }
+.game p { margin: 0; color: var(--paragraph-color-on-white); }
+.game .card-img { height: 180px; border-radius: 8px; }
+
+@media (max-width: 1000px) {
+  .game-list { grid-template-columns: repeat(2, 1fr); }
+  .page-banner .page-hero { height: 320px; }
+}
+
+@media (max-width: 640px) {
+  .game-list { grid-template-columns: 1fr; }
+  .page-banner .page-hero { height: 240px; }
+  main { margin: 1.25rem auto; padding: 0 0.75rem; }
+}
