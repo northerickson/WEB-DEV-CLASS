@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/site-plan.css">
   <script src="scripts/site-nav.js" defer></script>
 </head>
-<body>
+<body class="find-page">
   <header>
     <div class="header-inner">
       <img src="images/logo.svg" alt="Co-Op Gaming Logo" class="site-logo">
@@ -38,6 +38,7 @@
     <h2>Find Your Match</h2>
     <p>Use the filters below to narrow down games that fit your group's size, platform and budget. This is a static mockup for now — the interactive functionality will be added later in the semester.</p>
 
+    <div class="find-grid">
     <section class="filters">
       <form>
         <label>Platform:
@@ -65,16 +66,23 @@
             <option>$40+</option>
           </select>
         </label>
+        <button type="submit" class="btn-search">Search</button>
       </form>
     </section>
 
     <section class="results">
-      <article>
+      <article class="result-card">
         <h3>Example Result</h3>
         <img src="images/rsz_2minecraftt.jpg" alt="Example game" class="result-img">
         <p>Game: Stardew Valley (Co-Op) — Platform: PC — Players: 2–4 — Price: $14.99</p>
       </article>
+      <article class="result-card">
+        <h3>Example Result 2</h3>
+        <img src="images/StardewValley_4-768x432.png" alt="Example game" class="result-img">
+        <p>Game: Stardew Valley — Casual co-op farming — Players: 2–4 — Price: $14.99</p>
+      </article>
     </section>
+    </div>
   </main>
 
   <footer>
