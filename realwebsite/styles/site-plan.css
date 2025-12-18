@@ -34,11 +34,11 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: none;
-  margin: 0;
-  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 /* use the paragraph font across the page for a consistent, professional look */
 body {
@@ -47,7 +47,7 @@ body {
 }
 img {
   display: block;
-  margin: 0 auto;
+  margin: 1em 0;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
 }
@@ -73,6 +73,8 @@ header {
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -81,8 +83,86 @@ header > h1, header > h2 {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
+  margin: 1em 0;
 }
+
+/* Add zing with backgrounds and borders */
+.features-section {
+  background-color: var(--accent2-color);
+  padding: 2em;
+  border-radius: 8px;
+  margin: 2em 0;
+}
+
+.featured-section {
+  background-color: #f0f0f0;
+  padding: 2em;
+  border-radius: 8px;
+  margin: 2em 0;
+}
+
+.cta-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2em;
+  border-radius: 8px;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.cta-section h2, .cta-section p {
+  color: white;
+}
+
+.hero-section {
+  border-bottom: 3px solid var(--accent1-color);
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  border: 1px solid var(--primary-color);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.game-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  background-color: white;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.game {
+  border: 1px solid var(--primary-color);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1em 0;
+  background-color: white;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -120,18 +200,13 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 nav a {
-  padding:1em;
+  padding: 10px;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
-
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -139,6 +214,17 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  flex: 1;
 }
 
 .sitemap {
@@ -246,6 +332,15 @@ img {
   max-width: 480px;
   height: auto;
   border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--secondary-color);
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 @media (max-width: 640px) {
